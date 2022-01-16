@@ -23,3 +23,8 @@ services:
     env_file:
       - .env/development/database
     # END_HIGHLIGHT
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
